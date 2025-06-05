@@ -1,0 +1,15 @@
+{
+  "name": "hono-test",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.5.0",
+    "hono": "^4.7.11",
+    "mongoose": "^8.15.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
