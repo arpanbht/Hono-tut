@@ -1,4 +1,4 @@
-export const sendSuccessResponse = (c: any, data: any, message = "Success", statusCode = 200) => {
+export const sendSuccessResponse = (c: any, data: any, message: string, statusCode = 200) => {
   return c.json({
     success: "true",
     message,
@@ -6,7 +6,7 @@ export const sendSuccessResponse = (c: any, data: any, message = "Success", stat
   }, statusCode);
 }
 
-export const sendErrorResponse = (c: any, error: any, message = "Error", statusCode = 500) => {
+export const sendErrorResponse = (c: any, error: any, message: string, statusCode = 500) => {
   return c.json({
     success: "false",
     message,
