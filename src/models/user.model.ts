@@ -1,7 +1,13 @@
 import { Schema, model } from "mongoose";
 import * as bcryptjs from "bcryptjs";
 
-const userSchema = new Schema({
+export interface IUser {
+  name?: string;
+  email: string;
+  password: string;
+}
+
+const userSchema = new Schema<IUser>({
   name: {
     type: String,
   },
